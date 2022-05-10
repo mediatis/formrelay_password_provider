@@ -1,0 +1,11 @@
+
+plugin.tx_formrelay.settings.dataProviders {
+    password {
+        enabled = 0
+        field = password
+        generator {
+            minLength = 8
+            maxLength = 12
+        }
+    }
+}

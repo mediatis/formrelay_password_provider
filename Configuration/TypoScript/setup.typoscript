@@ -1,0 +1,21 @@
+
+plugin.tx_formrelay.settings.dataProviders {
+    password {
+        enabled = {$plugin.tx_formrelay.settings.dataProviders.password.enabled}
+        field = {$plugin.tx_formrelay.settings.dataProviders.password.field}
+        generator {
+            minLength = {$plugin.tx_formrelay.settings.dataProviders.password.generator.minLength}
+            maxLength = {$plugin.tx_formrelay.settings.dataProviders.password.generator.maxLength}
+            alphabetOptions {
+                # 1 {
+                #     alphabet = abcdefghijklmnopqrstuvwxyz
+                #     min = 1
+                # }
+                # 2 {
+                #     alphabet = ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                #     min = 1
+                # }
+            }
+        }
+    }
+}
